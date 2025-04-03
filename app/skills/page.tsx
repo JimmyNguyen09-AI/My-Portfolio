@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Laptop, Bot } from 'lucide-react';
 import LinkButton from '../components/LinkButton';
 

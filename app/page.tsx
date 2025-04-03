@@ -1,10 +1,6 @@
-// app/page.tsx
-import Header from './components/Header';
 import HeroSection from './components/HeroSection';
-import Footer from './components/Footer';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
-import { Typewriter } from 'react-simple-typewriter';
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">

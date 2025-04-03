@@ -25,7 +25,7 @@ export default function HeroSection() {
                         </h1>
 
                         <p className="text-gray-300 text-sm md:text-base">
-                            I&apos;m Thành, also known as Jimmy. I&apos;m currently living and studying in Australia, a place full of opportunities that helps me grow every day. I'm passionate about technology, especially software development and artificial intelligence.
+                            I&apos;m Thành, also known as Jimmy. I&apos;m currently living and studying in Australia, a place full of opportunities that helps me grow every day. I&apos;m passionate about technology, especially software development and artificial intelligence.
                         </p>
 
                         <p className="text-gray-300 text-sm md:text-base">
