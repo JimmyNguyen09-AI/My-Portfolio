@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+.custom-li {
+    position: relative;
+    padding-left: 1.5rem;
+    list-style: none;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.custom-li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #3b82f6;
+    transform: rotate(45deg);
+    border-radius: 2px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+    scroll-behavior: smooth;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes bounceUpRight {
+
+    0%,
+    100% {
+        transform: translateX(0);
+        box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
+    }
+
+    50% {
+        transform: translateX(-14px);
+        box-shadow: -5px 0px 3px rgba(252, 252, 252, 0.5);
+    }
+}
+
+@keyframes bounceUpLeft {
+
+    0%,
+    100% {
+        transform: translateX(0);
+        box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
+    }
+
+    50% {
+        transform: translateX(14px);
+        box-shadow: 5px 0px 3px rgba(252, 252, 252, 0.5);
+    }
+}
+
+.bounce-up-right {
+    animation: bounceUpRight 1.5s infinite ease-in-out;
+}
+
+.bounce-up-left {
+    animation: bounceUpLeft 1.5s infinite ease-in-out;
 }
