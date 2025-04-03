@@ -1,8 +1,5 @@
 'use client';
-
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
 import LinkButton from '../components/LinkButton';
 export default function HeroSection() {
     return (
@@ -24,11 +21,11 @@ export default function HeroSection() {
                     {/*  */}
                     <div className="text-center md:text-left space-y-4 max-w-2xl">
                         <h1 className="text-3xl md:text-4xl font-bold">
-                            Hi, I'm Jimmy <span className="inline-block animate-wave">👋</span>
+                            Hi, I&apos;m Jimmy <span className="inline-block animate-wave">👋</span>
                         </h1>
 
                         <p className="text-gray-300 text-sm md:text-base">
-                            I'm Thành, also known as Jimmy. I'm currently living and studying in Australia, a place full of opportunities that helps me grow every day. I'm passionate about technology, especially software development and artificial intelligence.
+                            I&apos;m Thành, also known as Jimmy. I&apos;m currently living and studying in Australia, a place full of opportunities that helps me grow every day. I'm passionate about technology, especially software development and artificial intelligence.
                         </p>
 
                         <p className="text-gray-300 text-sm md:text-base">
@@ -66,7 +63,7 @@ export default function HeroSection() {
                             width={80}
                             height={80}
                         />
-                        <h3 className="text-lg font-bold">King's Own Institute - Sydney</h3>
+                        <h3 className="text-lg font-bold">King&apos;s Own Institute - Sydney</h3>
                         <p className="text-gray-300 text-sm">Bachelor of Information Technology</p>
                         <p className="text-gray-300 text-sm">(2023 - Present)</p>
                     </div>
@@ -84,7 +81,7 @@ export default function HeroSection() {
                             🎓 Direct admission to HUST – Automotive Engineering major (2023)
                         </div>
                         <div className="bg-white/5 p-4 rounded-lg shadow-inner hover:scale-[1.02] transition ease-in-out duration-300">
-                            💼 Academic Excellence Scholarships for 3 semesters at King's Own Institute
+                            💼 Academic Excellence Scholarships for 3 semesters at King&apos;s Own Institute
                         </div>
                         <div className="bg-white/5 p-4 rounded-lg shadow-inner hover:scale-[1.02] transition ease-in-out duration-300">
                             📜 Completed multiple certifications on Coursera (tech & programming)

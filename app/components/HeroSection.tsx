@@ -7,7 +7,7 @@ export default function Hero() {
             {/* Nội dung */}
             <div className="max-w-2xl text-white px-4">
                 <h1 className="text-2xl font-bold mb-4 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] animate-fade-in">
-                    Hello 👋, I'm Jimmy Nguyen
+                    Hello 👋, I&apos;m Jimmy Nguyen
                 </h1>
 
                 <TypingTitle words={["Web Developer", "Full Stack Developer", "GenAI Engineer", "Computer Vision Engineer"]} />

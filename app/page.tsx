@@ -24,8 +24,8 @@ export default function Home() {
 
             {/* Intro */}
             <p className="text-2xl text-white mb-8 leading-relaxed">
-              Hi! I'm <strong>Thanh (Jimmy)</strong> — an IT student based in Australia with Vietnamese roots 🇻🇳.
-              I'm passionate about technology, especially in the fields of
+              Hi! I&apos;m <strong>Thanh (Jimmy)</strong> — an IT student based in Australia with Vietnamese roots 🇻🇳.
+              I&apos;m passionate about technology, especially in the fields of
               <strong> Artificial Intelligence</strong>,
               <strong> Computer Vision</strong>,
               <strong> Generative AI</strong>, and
