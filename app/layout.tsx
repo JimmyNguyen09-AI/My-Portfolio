@@ -20,10 +20,13 @@ export default function RootLayout({
           className="fixed inset-0 z-[-2] bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/bg.gif')" }}
         />
-        <div className="fixed inset-0 z-[-1] bg-black/40" />
+        <div className="fixed inset-0 z-[-1] bg-black/30" />
+        {/* <Header /> */}
 
-        <Header />
-        <main className="relative z-10">{children}</main>
+
+        <main className="relative z-10">
+          <Header />
+          {children}</main>
         <Footer />
       </body>
     </html>

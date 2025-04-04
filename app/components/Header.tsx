@@ -44,10 +44,10 @@ export default function Header() {
 
     return (
         <>
-            <header className=" w-full bg-white/10  backdrop-blur-sm shadow-md  sticky top-0 left-0 z-50  ">
+            <header className=" w-full bg-transparent sticky md:backdrop-blur-md top-0 left-0 z-50  ">
                 <nav className="container mx-auto px-3 py-1 flex items-center justify-between">
-                    <div className="text-xl w-[50px] h-[50px] font-bold hover:drop-shadow-[0_5px_15px_rgba(0,0,0,1)]  ">
-                        <Link href="/" className='scroll-smooth flex items-center '>
+                    <div className="text-xl w-[50px] md:block hidden h-[50px] font-bold  hover:drop-shadow-[0_5px_15px_rgba(0,0,0,1)]  ">
+                        <Link href="/" className='scroll-smooth  flex items-center '>
                             <img src="/logo-JN.png" alt="" />
 
                         </Link>
@@ -59,12 +59,22 @@ export default function Header() {
                     </div>
 
                     {/* Mobile icon */}
-                    <div className="md:hidden">
+
+                    <div className='flex gap-5 mx-auto md:hidden backdrop-blur-md bg-black/40 rounded-full px-6  max-w-[10rem] '>
+                        <div className="text-xl w-[50px]  h-[50px] font-bold hover:drop-shadow-[0_5px_15px_rgba(0,0,0,1)]  ">
+                            <Link href="/" className='scroll-smooth  flex items-center '>
+                                <img src="/logo-JN.png" alt="" />
+
+                            </Link>
+                        </div>
                         <button onClick={() => setIsOpen(true)} aria-label="Open Menu">
-                            <Menu className="h-7 w-7 text-white" />
+                            <Menu className="h-6 w-6 text-white" />
                         </button>
+
+
                     </div>
                 </nav>
+
             </header>
 
             {/* Overlay */}
@@ -102,7 +112,7 @@ export default function Header() {
                             </Link>
                         ))}
                     </nav>
-                    <div className="flex justify-center items-center pt-20">
+                    <div className="flex justify-center items-center pt-16">
                         <img
                             src="/logo-JN.png"
                             alt="Logo"

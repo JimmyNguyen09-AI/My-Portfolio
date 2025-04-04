@@ -20,7 +20,7 @@ export default function SkillsSection() {
     return (
         <div className="flex flex-col items-center gap-16 px-4 py-20 max-w-7xl mx-auto text-white bg-cover bg-center min-h-screen" style={{ backgroundImage: "url('/image.png')" }}>
             {/* Diagram Section */}
-            <div className="w-full flex flex-col md:flex-row justify-center items-center gap-20 relative">
+            <div className="w-full flex flex-col md:flex-row justify-center items-center gap-40 relative">
                 {/* Software Dev Diagram */}
                 <div className="relative w-72 h-72">
                     <div className="absolute w-full h-full border border-dashed border-white rounded-full"></div>

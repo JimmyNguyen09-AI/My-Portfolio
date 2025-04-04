@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import LinkButton from '../components/LinkButton';
+import { motion } from "framer-motion";
 
 const projects = [
     {
@@ -40,10 +41,18 @@ const projects = [
 export default function ProjectsPage() {
     return (
         <div className="min-h-screen text-white py-20 px-4 max-w-6xl mx-auto">
-            <h1 className="text-4xl font-bold text-center mb-12  ">🚀 My Projects</h1>
+            <h1 className="text-4xl font-bold text-center mb-12">🚀 My Projects</h1>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-20">
                 {projects.map((project, index) => (
-                    <div key={index} className="bg-white/20 backdrop-blur-md rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-102 duration-300 ease-in-out transition">
+                    <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: index * 0.1 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                        className="bg-white/20 backdrop-blur-md rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-[1.02] duration-300 ease-in-out transition"
+                    >
                         <Image
                             src={project.image}
                             alt={project.title}
@@ -55,20 +64,19 @@ export default function ProjectsPage() {
                             <h2 className="text-xl font-bold text-white">{project.title}</h2>
                             <p className="text-sm text-white/80">{project.description}</p>
                             <Link href={project.github} target="_blank">
-                                <button className="mt-2 px-4 py-2 bg-black/20 text-white  cursor-pointer rounded-md font-medium hover:bg-black/40">
+                                <button className="mt-2 px-4 py-2 bg-black/20 text-white cursor-pointer rounded-md font-medium hover:bg-black/40">
                                     VIEW ON GITHUB
                                 </button>
                             </Link>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
-
             </div>
+
             <LinkButton items={[
                 { href: '/skills', label: 'Skills' },
                 { href: '/contact', label: 'Contact' },
             ]} />
-
         </div>
     );
 }

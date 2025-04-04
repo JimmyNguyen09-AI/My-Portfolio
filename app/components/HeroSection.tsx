@@ -3,7 +3,7 @@ import TypingTitle from "./Typer";
 export default function Hero() {
 
     return (
-        <section className="  relative w-full h-[200px] flex items-center justify-center text-center pb-2  bg-white/10">
+        <section className="  relative w-full h-[200px] flex items-center justify-center text-center pb-2  ">
             {/* Nội dung */}
             <div className="max-w-2xl text-white px-4">
                 <h1 className="text-2xl font-bold mb-4 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] animate-fade-in">
