@@ -13,7 +13,7 @@ export default function FloatingMenu() {
             <div className="relative w-14 h-14">
                 {/* GitHub */}
                 <a
-                    href="https://github.com/yourusername"
+                    href="https://github.com/JimmyNguyen09-AI"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`absolute transition-all duration-300 ease-in-out bg-gray-600 text-white p-3 rounded-full shadow-md ${open ? 'bottom-[90px] right-0 opacity-100' : 'bottom-0 right-0 opacity-0 pointer-events-none'
@@ -24,7 +24,7 @@ export default function FloatingMenu() {
 
                 {/* LinkedIn */}
                 <a
-                    href="https://linkedin.com/in/yourlinkedin"
+                    href="https://www.linkedin.com/in/trung-thanh-nguyen-5aab6b332/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`absolute transition-all duration-300 ease-in-out bg-gray-600 text-white p-3 rounded-full shadow-md ${open ? 'bottom-[55px] right-[60px] opacity-100' : 'bottom-0 right-0 opacity-0 pointer-events-none'
@@ -35,7 +35,7 @@ export default function FloatingMenu() {
 
                 {/* Facebook */}
                 <a
-                    href="https://facebook.com/yourfacebook"
+                    href="https://www.facebook.com/willump.thankbestnunu"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`absolute transition-all duration-300 ease-in-out bg-gray-600 text-white p-3 rounded-full shadow-md ${open ? 'bottom-0 right-[70px] opacity-100' : 'bottom-0 right-0 opacity-0 pointer-events-none'
