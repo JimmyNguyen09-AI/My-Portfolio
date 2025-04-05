@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import FloatingMenu from './components/FloatingMenu';
+
 
 export const metadata: Metadata = {
   title: `Jimmy's Portfolio`,
@@ -27,7 +29,10 @@ export default function RootLayout({
         <main className="relative z-10">
           <Header />
           {children}</main>
+
         <Footer />
+        <FloatingMenu />
+
       </body>
     </html>
   );
