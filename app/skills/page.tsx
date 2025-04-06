@@ -74,14 +74,14 @@ export default function SkillsSection() {
 
             {/* Language List */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-                <div className="bg-gradient-to-br from-white/10 to-white/5 p-6 rounded-2xl shadow-xl border border-white/20 hover:shadow-2xl transition duration-300">
+                <div className="bg-gradient-to-br backdrop-blur-md from-white/10 to-white/5 p-6 rounded-2xl shadow-xl border border-white/20 hover:shadow-2xl transition duration-300">
                     <h2 className="text-2xl font-bold mb-6 text-center text-white/90">💻 Programming Languages</h2>
                     <ul className="grid grid-cols-2 gap-3 text-sm text-white/80">
                         {getProgramingLanguages()}
                     </ul>
                 </div>
 
-                <div className="bg-gradient-to-br from-white/10 to-white/5 p-6 rounded-2xl shadow-xl border border-white/20 hover:shadow-2xl transition duration-300">
+                <div className="bg-gradient-to-br backdrop-blur-md from-white/10 to-white/5 p-6 rounded-2xl shadow-xl border border-white/20 hover:shadow-2xl transition duration-300">
                     <h2 className="text-2xl font-bold mb-6 text-center text-white/90">🧠 Frameworks & Libraries</h2>
                     <ul className="grid grid-cols-2 gap-3 text-sm text-white/80">
                         {frameWorks.map((item, i) => (

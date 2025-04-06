@@ -65,7 +65,7 @@ export default function HeroSection() {
                 >
                     {/* Education */}
                     <div className="w-full flex flex-col md:flex-row gap-6">
-                        <div className="flex-1 bg-white/10 rounded-xl p-4 hover:scale-[1.02] transition ease-in-out duration-300 shadow-md flex flex-col items-center text-center space-y-3">
+                        <div className="flex-1 bg-white/10 backdrop-blur-md rounded-xl p-4 hover:scale-[1.02] transition ease-in-out duration-300 shadow-md flex flex-col items-center text-center space-y-3">
                             <Image
                                 src="/HUST.png"
                                 alt="HUST"
@@ -76,7 +76,7 @@ export default function HeroSection() {
                             <p className="text-gray-300 text-sm">Bachelor of Automative</p>
                             <p className="text-gray-300 text-sm">(2022 - 2023)</p>
                         </div>
-                        <div className="flex-1 bg-white/10 rounded-xl p-4 hover:scale-[1.02] transition ease-in-out duration-300 shadow-md flex flex-col items-center text-center space-y-3">
+                        <div className="flex-1 bg-white/10  backdrop-blur-md rounded-xl p-4 hover:scale-[1.02] transition ease-in-out duration-300 shadow-md flex flex-col items-center text-center space-y-3">
                             <Image
                                 src="/koi.png"
                                 alt="KOI"

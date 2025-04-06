@@ -26,7 +26,7 @@ const GetNav = () => {
                 >
                     <Link
                         href={item.href}
-                        className="border-b-2 pr-1 text-lg border-transparent hover:border-white pb-1 transition"
+                        className="border-b-2 pr-1 text-xl border-transparent hover:border-white pb-1 transition"
                     >
                         {item.label}
                     </Link>
@@ -44,12 +44,11 @@ export default function Header() {
 
     return (
         <>
-            <header className=" w-full bg-transparent sticky md:backdrop-blur-md top-0 left-0 z-50  ">
+            <header className=" w-[70%] mx-auto md:bg-white/10 rounded-full sticky md:backdrop-blur-md top-0 left-0 z-50  ">
                 <nav className="container mx-auto px-3 py-1 flex items-center justify-between">
-                    <div className="text-xl w-[50px] md:block hidden h-[50px] font-bold  hover:drop-shadow-[0_5px_15px_rgba(0,0,0,1)]  ">
-                        <Link href="/" className='scroll-smooth  flex items-center '>
+                    <div className="text-xl flex-shrink-0 mr-5 w-[50px] md:block hidden h-[50px] font-bold  hover:drop-shadow-[0_5px_15px_rgba(0,0,0,1)]  ">
+                        <Link href="/" className='scroll-smooth flex items-center '>
                             <img src="/logo-JN.png" alt="" />
-
                         </Link>
                     </div>
 
