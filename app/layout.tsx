@@ -8,6 +8,9 @@ import FloatingMenu from './components/FloatingMenu';
 export const metadata: Metadata = {
   title: `Jimmy's Portfolio`,
   description: 'Hi, my name is Jimmy, here is my portfolio, click to see something about me.',
+  icons: {
+    icon: "/logo-JN-upscaled.png",
+  },
 };
 
 export default function RootLayout({
