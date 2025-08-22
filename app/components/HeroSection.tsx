@@ -11,7 +11,7 @@ export default function Hero() {
                 </h1>
 
                 <TypingTitle words={["Web Developer", "Full Stack Developer", "GenAI Engineer", "Computer Vision Engineer"]} />
-                <a href="/JimmyNguyenCV.pdf" download className="px-8 mb-1 py-3 cursor-pointer bg-black/20 hover:bg-black/50 text-white font-semibold rounded-full shadow-lg transition duration-300">
+                <a href="/JimmyNguyenProfessionalCV.pdf" download className="px-8 mb-1 py-3 cursor-pointer bg-black/20 hover:bg-black/50 text-white font-semibold rounded-full shadow-lg transition duration-300">
                     Dowload my CV
                     <Download className="inline-block ml-2" />
                 </a>

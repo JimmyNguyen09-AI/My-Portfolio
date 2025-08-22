@@ -3,6 +3,7 @@ import './globals.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import FloatingMenu from './components/FloatingMenu';
+import { ThemeProvider } from '@/components/theme-provider';
 
 
 export const metadata: Metadata = {
@@ -19,22 +20,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth" data-theme="dark" suppressHydrationWarning>
       <body className="relative min-h-screen text-gray-800 antialiased">
-        <div
-          className="fixed inset-0 z-[-2] bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/bg.gif')" }}
-        />
-        <div className="fixed inset-0 z-[-1] bg-black/30" />
-        {/* <Header /> */}
+        <ThemeProvider>
+          <div
+            className="fixed inset-0 z-[-2] bg-white dark:bg-black bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('/bg.gif')" }}
+          />
+          <div className="fixed inset-0 z-[-1] bg-black/30" />
+          {/* <Header /> */}
 
 
-        <main className="relative z-10">
-          <Header />
-          {children}</main>
+          <main className="relative z-10">
+            <Header />
+            {children}</main>
 
-        <Footer />
-        <FloatingMenu />
+          <Footer />
+          <FloatingMenu />
+        </ThemeProvider>
 
       </body>
     </html>

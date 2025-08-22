@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import LinkButton from '../components/LinkButton';
 export default function HeroSection() {
     return (
+
         <div className="flex justify-center items-center min-h-screen px-4">
             <section className="flex flex-col items-center text-white gap-8 max-w-5xl w-full">
                 <AnimatePresence>
@@ -22,6 +23,7 @@ export default function HeroSection() {
                                     className="object-cover"
                                 />
                             </div>
+
 
                             {/*  */}
                             <div className="text-center md:text-left space-y-4 max-w-2xl">

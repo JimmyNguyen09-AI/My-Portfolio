@@ -1,4 +1,5 @@
 'use client';
+import { ModeToggle } from '@/components/toggle-theme';
 import { Menu, X, } from 'lucide-react';
 
 import Link from 'next/link';
@@ -54,6 +55,7 @@ export default function Header() {
 
                     {/* Desktop menu */}
                     <div className="hidden md:flex space-x-6 text-gray-400 font-medium  ">
+
                         <GetNav />
                     </div>
 
@@ -99,7 +101,7 @@ export default function Header() {
                         </button>
                     </div>
 
-                    <nav className="flex flex-col space-y-3 text-white text-base font-medium">
+                    <nav className="flex flex-col dark:bg-white   space-y-3 text-white text-base font-medium">
                         {navItems.map((item, index) => (
                             <Link
                                 key={index}
@@ -111,7 +113,7 @@ export default function Header() {
                             </Link>
                         ))}
                     </nav>
-                    <div className="flex justify-center items-center pt-16">
+                    <div className="flex d justify-center items-center pt-16">
                         <img
                             src="/logo-JN.png"
                             alt="Logo"
@@ -122,6 +124,7 @@ export default function Header() {
                 </div>
 
             </div>
+
 
         </>
     );
