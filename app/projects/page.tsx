@@ -8,33 +8,39 @@ import { motion } from "framer-motion";
 const projects = [
     {
         title: 'Quick, Draw! - Google',
-        description: 'Basic game using AI/Deep-Learning Neuro Network to predict human hand-drawn sketches',
+        description: 'Recreated Google’s Quick, Draw! game using real-time finger tracking via webcam instead of mouse input  Implemented gesture recognition and digit classification using OpenCV and a custom CNN model',
         image: '/quickdraw.gif',
-        github: 'https://github.com/JimmyNguyen09-AI/QuickDrawGoogle-CNN'
+        link: 'https://github.com/JimmyNguyen09-AI/QuickDrawGoogle-CNN'
     },
     {
-        title: 'AI Assistant WebApp',
-        description: 'AI Assistant WebApp using AI Agents, RAG, Flask and LangChain for smart responses.',
-        image: '/chatbot.jpg',
-        github: 'https://github.com/JimmyNguyen09-AI/AI-Assistant-RAG-LangChain-'
+        title: 'JN ZORA-AI Chatbot',
+        description: 'A scalable AI chat system using a microservices architecture. Integrated RAG forcontext-aware responses and real-time message streaming with secure user authentication',
+        image: '/jnzora.jpg',
+        link: 'https://www.jnzora.com/'
     },
     {
         title: 'Face-Generator',
-        description: 'Face Generator using DCGANs to generate realistic, high-quality synthetic faces for AI applications and research',
+        description: 'Implemented a Deep Convolutional GAN to synthesize realistic human faces from noise vectors.Focused on training stability, visual quality, and generator&discriminator balance.',
         image: '/face_gene.jpg',
-        github: 'https://github.com/JimmyNguyen09-AI/DCGANs-FaceGenerate'
+        link: 'https://github.com/JimmyNguyen09-AI/DCGANs-FaceGenerate'
     },
     {
         title: 'Photomosaic Generator',
         description: 'Photomosaic Generator transforms multiple images into a mosaic by matching colors, delivering visually captivating results.',
         image: '/phomosaic.jpg',
-        github: 'https://github.com/JimmyNguyen09-AI/Photomosaic-Generator'
+        link: 'https://github.com/JimmyNguyen09-AI/Photomosaic-Generator'
+    },
+    {
+        title: 'Staff Tracking YOLO',
+        description: 'Applied a pretrained YOLO model to detect and track staff in video streams. Focused on real time staff detection, automatically marking seats as “empty” when staff leave, andlogging the duration of absence, along with bounding box visualization and easy deployment from videoinput to tracked output.',
+        image: '/output.gif',
+        link: 'https://github.com/JimmyNguyen09-AI/Staff-Tracking'
     },
     {
         title: 'VOC Object Detection',
-        description: 'Detect objects in images/videos using Faster R-CNN (Pretrained) and VOC dataset.',
+        description: 'Applied a pretrained Faster R-CNN model to detect and classify objects in images using the Pascal VOCdataset. Focused on evaluation, bounding box visualization, and dataset integration',
         image: '/fasterRCNN.jpg',
-        github: 'https://github.com/JimmyNguyen09-AI/FasterRCNN-VOC?tab=readme-ov-file'
+        link: 'https://github.com/JimmyNguyen09-AI/FasterRCNN-VOC?tab=readme-ov-file'
     },
 ];
 
@@ -63,9 +69,9 @@ export default function ProjectsPage() {
                         <div className="p-5 space-y-2">
                             <h2 className="text-xl font-bold text-white">{project.title}</h2>
                             <p className="text-sm text-white/80">{project.description}</p>
-                            <Link href={project.github} target="_blank">
+                            <Link href={project.link} target="_blank">
                                 <button className="mt-2 px-4 py-2 bg-black/20 text-white cursor-pointer rounded-md font-medium hover:bg-black/40">
-                                    VIEW ON GITHUB
+                                    VIEW PROJECT
                                 </button>
                             </Link>
                         </div>
@@ -73,10 +79,7 @@ export default function ProjectsPage() {
                 ))}
             </div>
 
-            <LinkButton items={[
-                { href: '/skills', label: 'Skills' },
-                { href: '/contact', label: 'Contact' },
-            ]} />
+
         </div>
     );
 }

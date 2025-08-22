@@ -62,15 +62,7 @@ export default function Home() {
               </p>
             </motion.div>
           </div>
-          <div>
-            <Link href="/about">
-              <button className="mt-8 inline-flex items-center px-4 py-2 text-white   bg-black/20 hover:bg-black/50 rounded-full transition duration-300 ease-in-out bounce-up-right cursor-pointer text-xl">
-                More about me
-                <ChevronRight className="ml-2 h-5 w-5" />
-              </button>
-            </Link>
 
-          </div>
 
         </section>
 

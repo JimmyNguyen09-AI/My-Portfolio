@@ -127,12 +127,6 @@ export default function HeroSection() {
                         <li className='custom-li'>Playing sports: especially swimming and badminton</li>
                     </ul>
                 </div>
-                <LinkButton items={[
-                    { href: '/', label: 'Home' },
-                    { href: '/skills', label: 'Skills' },
-                ]} />
-
-
 
             </section>
         </div>

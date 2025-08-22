@@ -31,14 +31,7 @@ export default function ContactPage() {
                 </div>
 
             </div>
-            <div>
-                <Link href="/projects">
-                    <button className="mt-8 inline-flex items-center px-4 py-2 text-white   bg-black/20 hover:bg-black/50 rounded-full transition duration-300 ease-in-out bounce-up-left cursor-pointer text-xl">
-                        <ChevronLeft className="ml-2 h-5 w-5" />
-                        Back
-                    </button>
-                </Link>
-            </div>
+
         </div>
     );
 }

@@ -98,10 +98,7 @@ export default function SkillsSection() {
                     <li className='custom-li'>Vietnamese – Native speaker</li>
                 </ul>
             </div>
-            <LinkButton items={[
-                { href: '/about', label: 'About' },
-                { href: '/projects', label: 'Projects' },
-            ]} />
+
         </div>
     );
 }
