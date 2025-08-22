@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
 import { AnimatePresence, motion } from "framer-motion";
-import LinkButton from '../components/LinkButton';
 export default function HeroSection() {
     return (
 

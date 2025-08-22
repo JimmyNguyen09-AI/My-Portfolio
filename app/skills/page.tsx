@@ -5,10 +5,10 @@ import { Laptop, Bot } from 'lucide-react';
 import LinkButton from '../components/LinkButton';
 
 export default function SkillsSection() {
-    const devFrameworks = ['Next.js', 'React', 'Tailwind CSS'];
-    const aiFrameworks = ['PyTorch', 'Langchain', 'SKlearn', 'Flask', 'OpenCV', 'NLTK'];
+    const devFrameworks = ['Next.js', 'React', 'Tailwind CSS', 'Nodejs'];
+    const aiFrameworks = ['PyTorch', 'Langchain', 'SKlearn', 'FastAPI', 'OpenCV', 'PydanticAI'];
     const programmingLanguages = ['Python (Most used)', 'TypeScript (Most used)', 'JavaScript', 'HTML/CSS (Most used)', 'C++', 'Java', 'SQL'];
-    const frameWorks = ['Next.js', 'React', 'Tailwind CSS', 'PyTorch', 'Langchain', 'SKlearn', 'Flask', 'OpenCV', 'NLTK'];
+    const frameWorks = ['Next.js', 'FastAPI', 'React', 'Tailwind CSS', 'PyTorch', 'Langchain', 'SKlearn', 'Flask', 'OpenCV', 'PydanticAI', 'MistralAI'];
     const getProgramingLanguages = () => {
         return (<>
             {programmingLanguages.map((item, i) => (

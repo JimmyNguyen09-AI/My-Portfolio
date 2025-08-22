@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Facebook, Linkedin, Github, Mail, Phone, ChevronLeft } from 'lucide-react';
+import { Facebook, Linkedin, Github, Mail, Phone } from 'lucide-react';
 
 export default function ContactPage() {
     return (
