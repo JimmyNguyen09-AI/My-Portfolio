@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Laptop, Bot } from 'lucide-react';
-import LinkButton from '../components/LinkButton';
+
 
 export default function SkillsSection() {
     const devFrameworks = ['Next.js', 'React', 'Tailwind CSS', 'Nodejs'];
